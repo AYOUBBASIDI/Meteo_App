@@ -2,7 +2,6 @@ import { View, Text, TouchableOpacity, StyleSheet , Image } from 'react-native';
 
 
 const HeadComment = ({Comment}) => {
-    //get date format Tuesday 7:28 AM
     const date = new Date();
     const day = date.getDay();
     const hour = date.getHours();

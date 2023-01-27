@@ -75,6 +75,8 @@ const handleWeatherByHour = (req, res) => {
                     temp: item.main.temp,
                     humidity : item.main.humidity,
                     wind : item.wind.speed,
+                    date : item.dt_txt,
+                    icon : item.weather[0].icon
                 }
             });
             res.status(200).json(dataStored);

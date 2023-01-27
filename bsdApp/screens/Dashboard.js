@@ -10,6 +10,7 @@ import * as Location from 'expo-location';
 const Dashboard = () => {
   const [daysData, setDaysData] = useState([]);
   const [dayName , setNewDay] = useState();
+  const [city , setCity] = useState();
 
   useEffect(() => {
     (async () => {
@@ -28,8 +29,9 @@ const Dashboard = () => {
         .then(response => response.json())
         .then(data => {
           setDaysData(data.days);
+          setCity(data.city);
         }).catch(error => {
-            console.log(error);
+          console.log(error);
         });
       }
     })();
@@ -37,7 +39,6 @@ const Dashboard = () => {
   }, []);
 
   const newDay = (day) => {
-    console.log('dashboard');
     setNewDay(day);
   }
 
@@ -47,7 +48,7 @@ const Dashboard = () => {
         <View className="flex-1 justify-between h-full pb-3 pt-10" style={{flex: 1,paddingTop: 50,}}>
           <View className="pb-3" style={styles.Content}>
             <HeadComment Comment="Rainy morning"/>
-            <MainContent dayName={dayName}/>
+            <MainContent dayName={dayName} city={city}/>
             <DaysMeteo data={daysData} getDay={newDay}/>
           </View>
         </View>
@@ -65,8 +66,5 @@ const styles = StyleSheet.create({
   },
 
 });
-
-
-
 
 export default Dashboard;

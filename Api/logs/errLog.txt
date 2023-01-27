@@ -12,3 +12,5 @@
 20230126	11:08:32	ed40b00d-0141-4514-a10d-bb00a6136ebe	Error: ENOENT: no such file or directory, stat 'C:\wamp64\www\Meteo_App\Api\views\404.html'
 20230126	11:11:45	a4b6622e-d6c2-419b-9c90-0f4beb38813b	Error: ENOENT: no such file or directory, stat 'C:\wamp64\www\Meteo_App\Api\views\404.html'
 20230126	12:05:36	db6e712b-f4d7-47b5-8f01-5e742ed7166b	Error: ENOENT: no such file or directory, stat 'C:\wamp64\www\Meteo_App\Api\views\404.html'
+20230127	10:47:44	fa0d07d1-b8c6-4622-bf44-566b95105a71	Error: Not allowed by CORS
+20230127	14:55:22	415e1a79-078a-48f8-8ba5-e7cdf7954353	Error: Not allowed by CORS
